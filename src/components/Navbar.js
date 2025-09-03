@@ -1,7 +1,7 @@
 import React from "react";
+import search from '../images/search.svg';
+import bag from '../images/bag.svg';
 import heart from '../images/heart.png';
-import bag from '../images/bag.png';
-
 export function Navbar() {
     return (
         <>
@@ -24,7 +24,7 @@ export function Navbar() {
                     </button>
 
                     <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                        <ul className="navbar-nav mb-2 mb-lg-0 sans-font">
+                        <ul className="navbar-nav mb-lg-0 sans-font">
                             <li className="nav-item">
                                 <a className="nav-link active text-black fw-semibold" aria-current="page" href="/">New & Featured</a>
                             </li>
@@ -45,9 +45,13 @@ export function Navbar() {
                             </li>
                         </ul>
                     </div>
-
-                    <input type="search" name="search" className="mx-2 rounded-4 p-1 border-0 " style={{ backgroundColor: '#e0e0e0ff', color: '#756f6fff' }} />
-                    <span className="navbar-text d-flex gap-3">
+                    <div>
+                        <button className="btn btn-secondary-dark rounded-5 pb-2" style={{ backgroundColor: '#e0e0e0ff'}}>
+                            <img src={search} alt="" />
+                        </button>
+                        <input type="search" name="search" className="rounded-4 p-1 border-0 " style={{ backgroundColor: '#e0e0e0ff', color: '#242424ff', width: 130 }} />
+                    </div>
+                    <span className="navbar-text mx-5 d-flex gap-3">
                         <img src={heart} alt="Favorites" style={{ height: 20 }} />
                         <img src={bag} alt="Shopping Bag" style={{ height: 20 }} />
                     </span>
