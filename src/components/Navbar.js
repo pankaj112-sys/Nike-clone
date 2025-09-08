@@ -5,8 +5,8 @@ import bag from '../images/bag.png';
 export function Navbar() {
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary">
-                <div className="container-fluid">
+            <nav className="navbar navbar-expand-lg bg-white" >
+                <div className="container-fluid bg-white">
                     <a className="navbar-brand mx-5" href="/">
                         <img src="Logo_NIKE.svg" style={{ width: "auto", height: 20 }} alt="Nike Logo" />
                     </a>
