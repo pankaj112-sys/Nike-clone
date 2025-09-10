@@ -47,8 +47,8 @@ export function Navbar() {
         
                 <div className="flex">
                     <div className="flex mr-5">
-                    <button><img src={search} alt="SearchLogo" className="w-5 mx-5 border rounded-lg h-8 w-9 mt-3" /></button>
-                    <input type="text" className="h-7 w-30 border mt-3 rounded- p-1" placeholder="Search"/> 
+                    <button><img src={search} alt="SearchLogo" className="mx-2 h-8 w-5 absolute flex bg-gray-200 rounded-full" /></button>
+                    <input type="text" className="h-7 w-30 border mt-3 rounded-full h-[35px] bg-gray-300 " placeholder="Search"/> 
                     </div>
                     <img src={Heart} alt="Heart Logo" className=" w-5 h-5 my-4 mx-2 mr-4"/>
                     <img src={Bag} alt="Bag Logo" className=" w-6 mr-13 mb-3"/>
