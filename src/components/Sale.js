@@ -1,9 +1,9 @@
 import React from "react"; 
 
-export function Collection() {
+export function Sale() {
     return(
         <>
-        <h1>Collection page</h1>
+        <h1>Sales page.</h1>
         </>
     )
 }
