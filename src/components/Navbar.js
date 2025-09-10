@@ -1,6 +1,8 @@
 import React from "react";
 import logo from '../images/Logo_NIKE.svg'
 import search from '../images/search.svg'
+import Heart from '../images/heart.png'
+import Bag from '../images/bag.svg';
 import { Link } from "react-router-dom";
 import { Routes, Route } from 'react-router-dom';
 import { New } from "./New";
@@ -16,9 +18,9 @@ export function Navbar() {
         
     return (
         <>
-            <div className="flex justify-between p-1.5">
+            <div className="flex justify-between p-1.4">
                 
-                <Link to="/"><img src={logo} alt="Logo" className="flex w-15 m-2 mx-13"/></Link>
+                <Link to="/"><img src={logo} alt="Logo" className="flex w-18 m-2 mx-10 p-1"/></Link>
                 
                 <div className="flex justify-center">
                     <ul className="flex m-2 p-2">
@@ -44,9 +46,13 @@ export function Navbar() {
                 </div>
         
                 <div className="flex">
-                    <img src={search} alt="SearchLogo" className="mx-10 w-5 " />
+                    <img src={search} alt="SearchLogo" className=" w-5 mx-5" />
+                    <img src={Heart} alt="Heart Logo" className=" w-5 h-5 my-4 mx-2"/>
+                    <input type="text" className="h-5 "/> 
+                    <img src={Bag} alt="Bag Logo" className=" w-5 mr-13"/>
                 </div>
             </div>
+
            
             <Routes>
                 <Route path="/" element={<Home/>}></Route>

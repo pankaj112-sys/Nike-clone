@@ -1,5 +1,6 @@
 import React from "react";
 import Jordan from '../images/jordan.svg'
+import { Link } from "react-router-dom";
 export function Nav() {
     return(
         <>
@@ -9,10 +10,10 @@ export function Nav() {
             </div>
             <div className="flex justify-end p-1/5">
                 <ul className="flex mr-13 text-[14px] mt-1">
-                    <li className="flex mr-2.5 ml-2.5 mt-0.5 font-semibold text-[13px]">Find a Store</li>|
-                    <li className="flex mr-2.5 ml-2.5 mt-0.5 font-semibold text-[12px]">Help</li>|
-                    <li className="flex mr-2.5 ml-2.5 mt-0.5 font-semibold text-[13px]">Join Us</li>|
-                    <li className="flex mr-2.5 ml-2.5 mt-0.5 font-semibold text-[13px]">Sign In</li>
+                    <Link to="/findastore"><li className="flex mr-2.5 ml-2.5 mt-0.5 font-semibold text-[13px]">Find a Store</li></Link>|
+                    <Link to="/help"><li className="flex mr-2.5 ml-2.5 mt-0.5 font-semibold text-[12px]">Help</li></Link>|
+                    <Link to="/joinus"><li className="flex mr-2.5 ml-2.5 mt-0.5 font-semibold text-[13px]">Join Us</li></Link>|
+                    <Link to="/singin"><li className="flex mr-2.5 ml-2.5 mt-0.5 font-semibold text-[13px]">Sign In</li></Link>
                 </ul>
             </div>
         </div>
